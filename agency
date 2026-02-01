@@ -1,0 +1,122 @@
+<Agency>
+	<!-- ===== BASIC AGENCY INFO ===== -->
+	<Name>AGENCY_FULL_NAME_HERE</Name>            <!-- Example: Los Santos Police Department -->
+	<ShortName>AGENCY_SHORTNAME</ShortName>      <!-- Example: LSPD, BCSO, SAHP -->
+	<ScriptName>scriptname_lowercase</ScriptName><!-- Must be lowercase, no spaces -->
+	<Inventory>inventory_profile_name</Inventory><!-- Your custom inventory profile -->
+	<TextureDictionary>texture_dictionary_name</TextureDictionary>
+	<TextureName>texture_name</TextureName>
+
+	<!-- ================== PATROL UNIT ======================= -->
+	<!-- Main unit that spawns most often -->
+	<Loadout>
+		<Name>Patrol Unit</Name>
+
+		<Vehicles>
+			<Vehicle>patrol_vehicle_model_1</Vehicle>
+			<Vehicle>patrol_vehicle_model_2</Vehicle>
+			<Vehicle is_mp="true" use_modkit_liveries="true" livery_multi="1,2,3">patrol_livery_vehicle</Vehicle>
+		</Vehicles>
+
+		<Peds>
+			<!-- Male Officers -->
+			<Ped chance="60" outfit="male_base_outfit" inventory="patrol_inventory">mp_m_freemode_01</Ped>
+			<Ped chance="10" outfit="male_ranked_outfit" inventory="patrol_stun_inventory">mp_m_freemode_01</Ped>
+
+			<!-- Female Officers -->
+			<Ped chance="25" outfit="female_base_outfit" inventory="patrol_inventory">mp_f_freemode_01</Ped>
+			<Ped chance="5" outfit="female_ranked_outfit" inventory="patrol_stun_inventory">mp_f_freemode_01</Ped>
+		</Peds>
+
+		<NumPeds min="2" max="2" />
+
+		<Flags>
+			<Flag>RespondsAsTransport</Flag>
+			<Flag>RespondsAsBackup</Flag>
+			<Flag>SpawnsAmbiently</Flag>
+		</Flags>
+	</Loadout>
+
+	<!-- ================= TRANSPORT UNIT ===================== -->
+	<!-- Used to transport prisoners -->
+	<Loadout>
+		<Name>Transport Unit</Name>
+
+		<Vehicles>
+			<Vehicle>transport_vehicle_model</Vehicle>
+		</Vehicles>
+
+		<Peds>
+			<Ped chance="100" outfit="transport_outfit">mp_m_freemode_01</Ped>
+		</Peds>
+
+		<NumPeds min="1" max="2" />
+
+		<Flags>
+			<Flag>RespondsAsTransport</Flag>
+		</Flags>
+	</Loadout>
+
+	<!-- ================= OFF ROAD UNIT ====================== -->
+	<!-- Rare rural / terrain unit -->
+	<Loadout chance="5">
+		<Name>Off Road Unit</Name>
+
+		<Vehicles>
+			<Vehicle>offroad_vehicle_model</Vehicle>
+		</Vehicles>
+
+		<Peds>
+			<Ped chance="100" outfit="offroad_outfit" inventory="patrol_inventory">mp_m_freemode_01</Ped>
+		</Peds>
+
+		<NumPeds min="1" max="2" />
+
+		<Flags>
+			<Flag>RespondsAsBackup</Flag>
+			<Flag>SpawnsAmbiently</Flag>
+		</Flags>
+	</Loadout>
+
+	<!-- ================= HIGH SPEED UNIT ==================== -->
+	<!-- Pursuit / interceptor vehicles -->
+	<Loadout chance="3">
+		<Name>High Speed Unit</Name>
+
+		<Vehicles>
+			<Vehicle>interceptor_vehicle_model</Vehicle>
+		</Vehicles>
+
+		<Peds>
+			<Ped chance="100" outfit="pursuit_outfit" inventory="patrol_inventory">mp_m_freemode_01</Ped>
+		</Peds>
+
+		<NumPeds min="1" max="2" />
+
+		<Flags>
+			<Flag>RespondsAsBackup</Flag>
+			<Flag>SpawnsAmbiently</Flag>
+		</Flags>
+	</Loadout>
+
+	<!-- ================= CLASSIC UNIT ======================= -->
+	<!-- Vintage / secondary patrol vehicles -->
+	<Loadout chance="3">
+		<Name>Classic Unit</Name>
+
+		<Vehicles>
+			<Vehicle>classic_vehicle_model</Vehicle>
+		</Vehicles>
+
+		<Peds>
+			<Ped chance="100" outfit="classic_outfit" inventory="patrol_inventory">mp_m_freemode_01</Ped>
+		</Peds>
+
+		<NumPeds min="2" max="2" />
+
+		<Flags>
+			<Flag>SpawnsAmbiently</Flag>
+		</Flags>
+	</Loadout>
+
+</Agency>
