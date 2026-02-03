@@ -10,7 +10,8 @@ Highways.
 This is very useful when you're a GTA V LSPDFR mod creator.
 
 
-Do NOT repost this anywhere.
+__Do NOT repost this anywhere.__
+You can freely post this anywhere but it must not be the exact same thing.
 Credits go to morop201 on github : https://github.com/morop201
 moddb : https://www.moddb.com/members/moropro201/
 
