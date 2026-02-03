@@ -16,4 +16,4 @@ moddb : https://www.moddb.com/members/moropro201/
 
 Thank you for downloading.
 
-CAUTION: Use this at your own risk, I'm not to be held responsible if anything bad. happens to your gta v
+CAUTION: Use this at your own risk, I'm not to be held responsible if anything bad happens either to your GTA V or your computer.
